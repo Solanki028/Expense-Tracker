@@ -31,7 +31,7 @@ app.use("/api/v1/transactions", require("./routes/transactionRoutes")); // Trans
 // Serve static files in production
 app.use(express.static(path.join(__dirname, "client/build")));
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, " 'client/build', 'index.html'"));
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
 // Port configuration (either from .env or default to 8080)
